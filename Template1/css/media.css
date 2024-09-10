@@ -1,0 +1,12 @@
+@media only screen and (max-width:1440px){
+    .wrapper{padding: 0 25px;}
+}
+
+@media only screen and (max-width:1000px){
+    .menu_bar{display: flex;}
+    .nav_items{display: none;}
+
+    .banner{width: 100%;}
+    .banner figure{transform: none; left: 0; right: 0; width: 100%; height: auto;}
+
+}
