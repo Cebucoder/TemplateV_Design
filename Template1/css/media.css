@@ -3,10 +3,125 @@
 }
 
 @media only screen and (max-width:1000px){
+    .banner_info{padding: 0 25px;}
+
     .menu_bar{display: flex;}
-    .nav_items{display: none;}
+    /* .nav_items{display: none;} */
 
-    .banner{width: 100%;}
-    .banner figure{transform: none; left: 0; right: 0; width: 100%; height: auto;}
+    /* .banner{width: 100%;} */
+    /* .banner figure{transform: none; left: 0; right: 0; width: 100%; height: auto;} */
 
+    .btm_content{flex-direction: column;}
+    .btm_left_content, .btm_right_content{max-width: 100%; display: grid; grid-template-columns: 1fr 1fr;}
+
+    /* Bootom 2 */
+    .btm2_box{max-width: 100%; width: 100%;}
+    .btm2_box_info{max-width: 100%;}
+    /* Bootom 2 */
+
+    /* Bottom 4 */
+    .btm4_box{max-width: 100%; width: 100%;}
+    /* Bottom 4 */
+
+    /* Footer */
+    .footer_flex { flex-direction: column-reverse; }
+    .footer_right_con { max-width: 100%; }
+    .comp_address { min-height: 300px; }
+    .footer_form h3 { text-align: center; }
+    .footer_left_con { max-width: 300px; text-align: center; margin: 0 auto; }
+    .footer_social { text-align: center; }
+    .footer_social ul { justify-content: center; }
+    /* Footer */
+
+
+    /* Mobile nav */
+    .disable_scoll{overflow-y: hidden;}
+    .nav_items {right: -100%; opacity: 0; visibility: hidden;transition: 0.7s !important; position: fixed; top: 0; right: 0; background: rgba(0,0,0); height: 100%; z-index: 9999; background: rgba(0,0,0,0.52); box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); backdrop-filter: blur(5px); -webkit-backdrop-filter: blur(5px); }
+    .nav_items ul {right: -100%; opacity: 0; visibility: hidden;transition: 0.7s !important; max-height: 100vh; overflow-y: scroll; justify-content: flex-start; flex-direction: column; max-width: 300px; background: var(--body-color); height: 100%; padding-top: 100px; position: absolute; width: 100%; }
+    .nav_items ul li { margin: 20px; }
+
+    .menu_bar { position: relative; z-index: 9999;}
+    .toggle_mobile_nav{right: 0 !important; opacity: 1 !important; visibility: visible !important; transition: 0.7s !important;}
+    .toogle_nav_overly{right: 0 !important; opacity: 1 !important; visibility: visible !important;transition: 0.6s !important;}
+
+    .menu_bar_x_trans1 {width: 80% !important; transform: rotate(45deg);  position: absolute; }
+    .menu_bar_x_trans2 {display: none;}
+    .menu_bar_x_trans3 {  width: 80% !important; transform: rotate(-45deg); position: absolute; }
+    .fixed_logo{z-index: 99999;}
+
+    /* Mobile nav */
+    
+
+}
+
+@media only screen and (max-width:700px){
+
+    .btm_des{text-align: center;}
+    .btm_right_content, .btm_left_content {gap: 0; display: flex; flex-direction: column;}
+    .btm_des{width: 100%; max-width: 100%; padding: 20px;}
+    .btm_center_img figure{min-height: 0;}
+    .btm_center_img figure img{height: auto;}
+        
+}
+
+
+@media only screen and (max-width:800px){
+
+    .nav_con{background: var(--body-color); }
+
+    /* Banner */
+    .banner{top: 0;}
+    .banner .wrapper{padding: 0;}
+    .banner figure{width: 100%;}
+    .banner figure img{width: 100%; min-height: 300px; object-fit: cover;}
+    .banner_info { position: static; transform: none; color: var(--body-color); padding: 80px 25px 50px; }
+    .banner_info h1{line-height: 100%; font-size: 45px;}
+    .banner_info p {color: var(--body-color);}
+    .banner_info a { color: #ffff; }
+    .arrow_down { display: none; }
+      
+    /* Banner */
+
+
+    .mid_box {max-width: 365px; width: 45%; }
+
+    /* Bottom 1 */
+    .bottom1{padding: 50px 0;}
+    /* Bottom 1 */
+
+    /* Bottom 2 */
+    .bottom2{padding: 50px 0;}
+    /* Bottom 2 */
+
+    /* Bottom 3 */
+    .bottom3{padding: 50px 0;}
+    /* Bottom 3 */
+
+    /* Bottom 4 */
+    .bottom4{padding: 50px 0;}
+    /* Bottom 4 */
+
+    /* Footer */
+    .footer_con{padding: 50px 0;}
+    /* Footer */
+    
+}
+
+@media only screen and (max-width:680px){
+
+}
+
+
+@media only screen and (max-width:500px){
+
+    .mid_box {width: 100%; }
+    .mid_con h2{font-size: 28px;}
+
+
+    /* Bottom2 */
+    .btm2_boxes{gap: 10px;}
+    .btm2_box figure { display: none; }
+    .btm2_box{padding: 25px 15px; background: var(--body-color); border-radius: 10px;}
+    /* Bottom2 */
+        
 }
